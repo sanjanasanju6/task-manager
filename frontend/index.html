@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TaskFlow Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <header>
+        <h1>TaskFlow🚀</h1>
+        <p>Organize your work efficiently</p>
+    </header>
+
+    <div class="task-form">
+        <input type="text" id="title" placeholder="Enter task title..." />
+        <input type="date" id="dueDate" />
+        <select id="priority">
+            <option value="High">🔥 High</option>
+            <option value="Medium">⚡ Medium</option>
+            <option value="Low">🌿 Low</option>
+        </select>
+        <button onclick="addTask()">+ Add Task</button>
+    </div>
+
+    <div class="stats">
+        <div>Total: <span id="totalTasks">0</span></div>
+        <div>Completed: <span id="completedTasks">0</span></div>
+        <div>Pending: <span id="pendingTasks">0</span></div>
+    </div>
+
+    <ul id="taskList"></ul>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

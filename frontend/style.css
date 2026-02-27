@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    min-height: 100vh;
+}
+
+.app {
+    background: #ffffff;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-weight: 600;
+    color: #333;
+}
+
+header p {
+    color: #777;
+    font-size: 14px;
+}
+
+.task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.task-form input,
+.task-form select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    flex: 1;
+}
+
+.task-form button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.task-form button:hover {
+    background: #5a67d8;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-info strong {
+    font-weight: 500;
+}
+
+.task-info small {
+    font-size: 12px;
+    color: #888;
+}
+
+.priority-High { border-left: 6px solid #e53e3e; }
+.priority-Medium { border-left: 6px solid #dd6b20; }
+.priority-Low { border-left: 6px solid #38a169; }
+
+.actions button {
+    border: none;
+    padding: 6px 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.complete-btn {
+    background: #38a169;
+    color: white;
+}
+
+.delete-btn {
+    background: #e53e3e;
+    color: white;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .task-form {
+        flex-direction: column;
+    }
+    .stats {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
