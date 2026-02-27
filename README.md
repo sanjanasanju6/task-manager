@@ -1,4 +1,4 @@
-#  TaskFlow – Task Manager Application
+#  Task-manager– Task Manager Application
 
 A modern **Task Manager** web application built with **Node.js, Express, MongoDB, HTML, CSS, and JavaScript**.  
 This project allows users to **create, read, update, and delete tasks**, manage **task priorities**, and persist data using **MongoDB**. The application is fully **responsive** for both desktop and mobile devices.
